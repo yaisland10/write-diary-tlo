@@ -1,6 +1,3 @@
-
-"" for writing diary like-twitter.
-
 let g:pattern_guid = '[0-9,a-z]\{8\}-[0-9,a-z]\{4\}-[0-9,a-z]\{4\}-[0-9,a-z]\{4\}-[0-9,a-z]\{12\}'
 let g:pattern_message_guid = '^## '.g:pattern_guid
 
