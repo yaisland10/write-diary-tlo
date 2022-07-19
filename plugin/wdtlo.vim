@@ -1,7 +1,7 @@
-" reply, default behavior is to replay tweet-like message recently.
+" Like Reply, destination of replay is message recently.
 nnoremap <silent><F1> :call wdtlo#ReplyMessage()<CR>i
 inoremap <silent><F1> <ESC>:call wdtlo#ReplyMessage()<CR>i
-" reply, default behavior is replaying to a tweet-like message recently.
+" Like Compose, create a new message.
 nnoremap <silent><F2> :call wdtlo#ComposeMessage()<CR>i
 inoremap <silent><F2> <ESC>:call wdtlo#ComposeMessage()<CR>i
 " if cursor on guid, then yank guid.
