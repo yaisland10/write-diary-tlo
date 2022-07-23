@@ -12,6 +12,8 @@ endfunction
 
 function! wdtlo#ComposeMessage()
 	call wdtlo#DeleteIndentexpr()
+	call append(line('.'), ["", "---", "", '## '.system('python -c "import uuid; print(uuid.uuid4(), end=\"\");"'), "", strftime("%Y-%m-%d %H:%M:%S"), "", ""])
+	call cursor(line('.') + 8, 0)
 	call append(line('.'), ['## '.system('python -c "import uuid; print(uuid.uuid4(), end=\"\");"'), "", strftime("%Y-%m-%d %H:%M:%S"), "", ""])
 	call cursor(line('.') + 5, 0)
 	call wdtlo#RestoreIndentexpr()
