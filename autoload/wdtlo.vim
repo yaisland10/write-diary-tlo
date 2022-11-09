@@ -24,7 +24,7 @@ function! wdtlo#ReplyMessage()
 	let guid = getline(line('.'))->slice(3)
 	call search(g:pattern_message_guid)
 	call cursor(line('.') + 3, 0)
-	call append(line('.'), ['[rp]('.guid.')', ""])
+	call append(line('.'), ['[rp](#'.guid.')', ""])
 	call cursor(line('.') + 3, 0)
 	call wdtlo#RestoreIndentexpr()
 endfunction
